@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,7 +21,6 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView mRecyclerview;
     private searchadapter mSearchAdapter = new searchadapter();
     public searchLayout msearchLayout;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

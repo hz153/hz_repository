@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="duration_hint">范围在100 ~ 10000</string>
+    <string name="invalid_input">输入不合法，请输入范围为100 ~ 10000</string>
+</resources>

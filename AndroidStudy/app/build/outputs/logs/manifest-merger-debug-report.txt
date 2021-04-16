@@ -1,0 +1,237 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:2:1-44:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\443f782f2a39ef60ce17871932261dfb\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\635f7637d418dec2645d5743099d849f\AndroidManifest.xml:2:1-11:12
+MERGED from [com.facebook.fresco:fresco:0.12.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\d7ddb6e6fbb12eba29d29a56c11bdad0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\3fbb1709b27f962aa0cc25a65821c1c5\AndroidManifest.xml:2:1-12:12
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\e71b5d8981a27beeaf3bbd9350bc0d09\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\a4e6e7155dcc8018790a475a6b7a7a3e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\4b398c068e7dabc63fbae7c8b295fc54\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\68005723fd4fd9ad26e7d8a85dab14ce\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\9d65de4ca7f85fcb60903553bae90fba\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\c34fc4085434ea825562071e93825c48\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\96dd36d8658c944361b4a38e57ee26de\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\cfcace64d581045b421b8d6216da4412\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\aa7d1bddd81fb4657642fdba6b558ed6\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\f099a5ab789135c039f12ecb5b87e5ba\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\fb06614c20de6370cf28aef01ee55d79\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\b73d84788b97c0cdbcadbb427743080c\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\2aec068fa8dd38819b81db7dc4ffde80\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\446de5113bdd3d597a374a0993d2493b\AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\30397cef85a80ef702166b860e7c31ae\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\d505ec07f6d49a9604d37ba416cc96d3\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\2cfc802d019a2a4b0f4e0a14501eeb1a\AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\3889c6fc5992f588e2d7e72c54653ae7\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\e1cc8791e6efe325381099372a8db6d2\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\a5a13a62d94d36d4a3f5650369d9cf88\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\aba9a998da4339880d6dbbbc98cf17e6\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\ca74083c3ca8a78eb88fbfe4c5e61298\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\83736acbae9df3739a1def5803de18a2\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\78dedf1877c9dc5a0f2da5b0d6f46368\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\a031065f8bd50dfd8ec7725b696d82bd\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\c4d92537e923a419ba3f2252b4db9672\AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:drawee:0.12.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\cb5e69fea0c24b841a0315d98a6d7667\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:0.12.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\4e8fa55d012f070a95dac79acc606230\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:0.12.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\f875adbabf08407cdccccefa297bfb92\AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:0.12.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\cc132dc461903fbb8dafec04d2f2a90a\AndroidManifest.xml:2:1-9:12
+INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:2:1-44:12
+INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:2:1-44:12
+	package
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:4:5-44
+		INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml
+		INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:2:1-44:12
+		INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:2:1-44:12
+		INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:5:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:7:5-81
+	android:name
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:7:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:9:5-80
+	android:name
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:9:22-77
+application
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:11:5-42:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\635f7637d418dec2645d5743099d849f\AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\635f7637d418dec2645d5743099d849f\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\3fbb1709b27f962aa0cc25a65821c1c5\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\3fbb1709b27f962aa0cc25a65821c1c5\AndroidManifest.xml:10:5-20
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\446de5113bdd3d597a374a0993d2493b\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\446de5113bdd3d597a374a0993d2493b\AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\30397cef85a80ef702166b860e7c31ae\AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\30397cef85a80ef702166b860e7c31ae\AndroidManifest.xml:22:5-23:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\2cfc802d019a2a4b0f4e0a14501eeb1a\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\2cfc802d019a2a4b0f4e0a14501eeb1a\AndroidManifest.xml:9:5-20
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\446de5113bdd3d597a374a0993d2493b\AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:15:9-35
+	android:label
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:13:9-41
+	tools:ignore
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:16:9-48
+	android:allowBackup
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:12:9-35
+	android:theme
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:14:9-40
+activity#com.domker.study.androidstudy.MainActivity
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:17:9-23:20
+	android:name
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:17:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:18:13-22:29
+action#android.intent.action.MAIN
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:19:17-69
+	android:name
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:21:17-77
+	android:name
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:21:27-74
+activity#com.domker.study.androidstudy.PermissionActivity
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:24:9-56
+	android:name
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:24:19-53
+activity#com.domker.study.androidstudy.CanvasActivity
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:25:9-52
+	android:name
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:25:19-49
+activity#com.domker.study.androidstudy.ImageActivity
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:26:9-51
+	android:name
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:26:19-48
+activity#com.domker.study.androidstudy.FrescoImageActivity
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:27:9-57
+	android:name
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:27:19-54
+activity#com.domker.study.androidstudy.VideoActivity
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:28:9-51
+	android:name
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:28:19-48
+activity#com.domker.study.androidstudy.GlideActivity
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:29:9-51
+	android:name
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:29:19-48
+activity#com.domker.study.androidstudy.MediaPlayerActivity
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:30:9-32:77
+	android:configChanges
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:32:13-74
+	android:name
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:31:13-48
+provider#android.support.v4.content.FileProvider
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:33:9-41:20
+	android:grantUriPermissions
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:37:13-47
+	android:authorities
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:35:13-77
+	android:exported
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:36:13-37
+	android:name
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:34:13-67
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:38:13-40:58
+	android:resource
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:40:17-55
+	android:name
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml:39:17-67
+uses-sdk
+INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml
+INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\443f782f2a39ef60ce17871932261dfb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\443f782f2a39ef60ce17871932261dfb\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\635f7637d418dec2645d5743099d849f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\635f7637d418dec2645d5743099d849f\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:0.12.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\d7ddb6e6fbb12eba29d29a56c11bdad0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:0.12.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\d7ddb6e6fbb12eba29d29a56c11bdad0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\3fbb1709b27f962aa0cc25a65821c1c5\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.9.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\3fbb1709b27f962aa0cc25a65821c1c5\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\e71b5d8981a27beeaf3bbd9350bc0d09\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\e71b5d8981a27beeaf3bbd9350bc0d09\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\a4e6e7155dcc8018790a475a6b7a7a3e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\a4e6e7155dcc8018790a475a6b7a7a3e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\4b398c068e7dabc63fbae7c8b295fc54\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\4b398c068e7dabc63fbae7c8b295fc54\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\68005723fd4fd9ad26e7d8a85dab14ce\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\68005723fd4fd9ad26e7d8a85dab14ce\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\9d65de4ca7f85fcb60903553bae90fba\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\9d65de4ca7f85fcb60903553bae90fba\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\c34fc4085434ea825562071e93825c48\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\c34fc4085434ea825562071e93825c48\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\96dd36d8658c944361b4a38e57ee26de\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\96dd36d8658c944361b4a38e57ee26de\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\cfcace64d581045b421b8d6216da4412\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\cfcace64d581045b421b8d6216da4412\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\aa7d1bddd81fb4657642fdba6b558ed6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\aa7d1bddd81fb4657642fdba6b558ed6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\f099a5ab789135c039f12ecb5b87e5ba\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\f099a5ab789135c039f12ecb5b87e5ba\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\fb06614c20de6370cf28aef01ee55d79\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\fb06614c20de6370cf28aef01ee55d79\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\b73d84788b97c0cdbcadbb427743080c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\b73d84788b97c0cdbcadbb427743080c\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\2aec068fa8dd38819b81db7dc4ffde80\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\2aec068fa8dd38819b81db7dc4ffde80\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\446de5113bdd3d597a374a0993d2493b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\446de5113bdd3d597a374a0993d2493b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\30397cef85a80ef702166b860e7c31ae\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\30397cef85a80ef702166b860e7c31ae\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\d505ec07f6d49a9604d37ba416cc96d3\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\d505ec07f6d49a9604d37ba416cc96d3\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\2cfc802d019a2a4b0f4e0a14501eeb1a\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.9.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\2cfc802d019a2a4b0f4e0a14501eeb1a\AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\3889c6fc5992f588e2d7e72c54653ae7\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\3889c6fc5992f588e2d7e72c54653ae7\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\e1cc8791e6efe325381099372a8db6d2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\e1cc8791e6efe325381099372a8db6d2\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\a5a13a62d94d36d4a3f5650369d9cf88\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\a5a13a62d94d36d4a3f5650369d9cf88\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\aba9a998da4339880d6dbbbc98cf17e6\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\aba9a998da4339880d6dbbbc98cf17e6\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\ca74083c3ca8a78eb88fbfe4c5e61298\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\ca74083c3ca8a78eb88fbfe4c5e61298\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\83736acbae9df3739a1def5803de18a2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\83736acbae9df3739a1def5803de18a2\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\78dedf1877c9dc5a0f2da5b0d6f46368\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\78dedf1877c9dc5a0f2da5b0d6f46368\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\a031065f8bd50dfd8ec7725b696d82bd\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\a031065f8bd50dfd8ec7725b696d82bd\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\c4d92537e923a419ba3f2252b4db9672\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\c4d92537e923a419ba3f2252b4db9672\AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:drawee:0.12.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\cb5e69fea0c24b841a0315d98a6d7667\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:0.12.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\cb5e69fea0c24b841a0315d98a6d7667\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:0.12.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\4e8fa55d012f070a95dac79acc606230\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:0.12.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\4e8fa55d012f070a95dac79acc606230\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:0.12.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\f875adbabf08407cdccccefa297bfb92\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:0.12.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\f875adbabf08407cdccccefa297bfb92\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:0.12.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\cc132dc461903fbb8dafec04d2f2a90a\AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:0.12.0] C:\Users\deep dark\.gradle\caches\transforms-2\files-2.1\cc132dc461903fbb8dafec04d2f2a90a\AndroidManifest.xml:5:5-7:41
+INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml
+INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml
+		INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml
+		ADDED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml
+		INJECTED from D:\git\repository1\AndroidStudy\app\src\main\AndroidManifest.xml

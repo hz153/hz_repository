@@ -12,7 +12,6 @@ import android.os.Message;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.Window;
 import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -46,6 +45,7 @@ public class VideoPlayer extends AppCompatActivity implements View.OnClickListen
     private boolean isPress = false;
 
     private Handler handler1 = new Handler();
+    private Handler handler2 = new Handler();
     private Timer timer = new Timer();
     @SuppressLint("HandlerLeak")
     private Handler mHandler = new Handler(){
@@ -78,7 +78,6 @@ public class VideoPlayer extends AppCompatActivity implements View.OnClickListen
         setContentView(R.layout.activity_video_player);
         Intent intent = getIntent();
         video = (Video)intent.getSerializableExtra("Video");
-        //    String video_url = "https://sf3-hscdn-tos.pstatp.com/obj/developer-baas/baas/tt41nq/38d55db3a39710d0_1620049219067.mp4";
         String video_url = video.getVideoUrl();
         init_view();
 
@@ -133,12 +132,20 @@ public class VideoPlayer extends AppCompatActivity implements View.OnClickListen
                 default:
                     break;
             }
+            videoView.stopPlayback();
             Toast.makeText(VideoPlayer.this, err, Toast.LENGTH_SHORT).show();
-            return false;
+            handler2.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    pd.dismiss();
+                    finish();
+                }
+            }, 500);
+            return true;
         });
     }
 
-    @SuppressLint("ClickableViewAccessibility")
+    @SuppressLint({"ClickableViewAccessibility", "SetTextI18n"})
     private void init_view(){
         videoView = findViewById(R.id.videoView);
         tv_start = findViewById(R.id.tv_start);
@@ -256,6 +263,7 @@ public class VideoPlayer extends AppCompatActivity implements View.OnClickListen
     @Override
     protected void onDestroy() {
         handler1.removeCallbacks(null);
+        handler2.removeCallbacks(null);
         mHandler.removeCallbacks(null);
         timer.cancel();
         imageView.setVisibility(View.INVISIBLE);

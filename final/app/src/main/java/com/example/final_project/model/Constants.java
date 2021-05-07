@@ -1,4 +1,4 @@
-package com.example.final_project;
+package com.example.final_project.model;
 
 public class Constants {
     public static final String BASE_URL = "https://api-sjtu-camp-2021.bytedance.com/homework/invoke/";

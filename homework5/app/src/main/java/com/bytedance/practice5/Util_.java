@@ -3,7 +3,7 @@ import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class Util {
+public class Util_ {
     public static final byte[] inputStream2bytes(InputStream inStream)
             throws IOException {
         ByteArrayOutputStream swapStream = new ByteArrayOutputStream();

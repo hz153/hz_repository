@@ -2,11 +2,9 @@ package com.bytedance.practice5;
 
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.os.Handler;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
@@ -16,18 +14,13 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.bytedance.practice5.model.Message;
 import com.bytedance.practice5.model.UploadResponse;
 import com.facebook.drawee.view.SimpleDraweeView;
 
 import java.io.InputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 
-import okhttp3.FormBody;
 import okhttp3.MediaType;
 import okhttp3.MultipartBody;
-import okhttp3.Request;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -174,7 +167,7 @@ public class UploadActivity extends AppCompatActivity {
         byte[] data = null;
         try {
             InputStream is = getContentResolver().openInputStream(uri);
-            data = Util.inputStream2bytes(is);
+            data = Util_.inputStream2bytes(is);
         } catch (Exception e) {
             e.printStackTrace();
         }

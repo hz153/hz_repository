@@ -1,12 +1,20 @@
 package com.example.final_project;
 
+import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Rect;
 import android.os.Bundle;
 
+import com.example.final_project.favorite.FavoriteActivity;
+import com.example.final_project.history.HistoryActivity;
 import com.example.final_project.model.Constants;
-import com.example.final_project.model.Video;
-import com.example.final_project.model.VideoListResponse;
+import com.example.final_project.upload.CustomCameraActivity;
+import com.example.final_project.video.Video;
+import com.example.final_project.video.VideoListResponse;
+import com.example.final_project.model.searchLayout;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.gson.Gson;
@@ -15,6 +23,8 @@ import com.google.gson.reflect.TypeToken;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewpager.widget.PagerAdapter;
@@ -23,13 +33,11 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Handler;
 import android.util.Log;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -46,8 +54,11 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 public class ScrollingActivity extends AppCompatActivity {
+    private final static int PERMISSION_REQUEST_CODE = 1001;
     private final String TAG = "网络调试";
     private Context context = this;
+    @SuppressLint("StaticFieldLeak")
+    private static Context mContext;
     private MyAdapter myAdapter = new MyAdapter();
     //viewpager
     private ViewPager view_pager;
@@ -67,6 +78,7 @@ public class ScrollingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scrolling);
+        mContext = this;
         //初始化toolbar和btn
         initView();
         //RecyclerView配置使用
@@ -86,11 +98,6 @@ public class ScrollingActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         CollapsingToolbarLayout collapsingToolbarLayout = findViewById(R.id.toolbar_layout);
         setSupportActionBar(toolbar);
-        //button初始化
-        Button buttonHome = findViewById(R.id.buttonHome);
-        Button buttonCLS = findViewById(R.id.buttonCLS);
-        Button buttonHistory = findViewById(R.id.buttonHistory);
-        Button buttonFavorite = findViewById(R.id.buttonFavorite);
         //图片滑动业面的初始化
         newsTitle = findViewById(R.id.NewsTitle);
         view_pager =  findViewById(R.id.view_pager);
@@ -107,15 +114,27 @@ public class ScrollingActivity extends AppCompatActivity {
                 }
             }
         });
-        //button点击跳转
-        //todo:补充完整点击跳转事件CLS、FAV
         //跳转到历史页面
-//        buttonHistory.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(ScrollingActivity.this, HistoryActivity.class));
-//            }
-//        });
+        (findViewById(R.id.buttonHistory)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ScrollingActivity.this, HistoryActivity.class));
+            }
+        });
+        //跳转到收藏夹页面
+        (findViewById(R.id.buttonFavorite)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ScrollingActivity.this, FavoriteActivity.class));
+            }
+        });
+        //跳转到我的页面
+        (findViewById(R.id.buttonMy)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(ScrollingActivity.this, MineActivity.class));
+            }
+        });
     }
 
     private void initMyAdapter(){
@@ -198,26 +217,26 @@ public class ScrollingActivity extends AppCompatActivity {
     }
 
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_scrolling, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.menu_scrolling, menu);
+//        return true;
+//    }
+//
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Home/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
+//        return super.onOptionsItemSelected(item);
+//    }
 
     //自动轮播图片实现
     private void setViewPager() {
@@ -336,7 +355,7 @@ public class ScrollingActivity extends AppCompatActivity {
         }
     }
 
-    //分割item
+    //分割item、自定义分割线
     class MyDecoration extends RecyclerView.ItemDecoration{
         @Override
         public void getItemOffsets(@NonNull Rect outRect, @NonNull View view, @NonNull RecyclerView parent, @NonNull RecyclerView.State state) {
@@ -395,4 +414,48 @@ public class ScrollingActivity extends AppCompatActivity {
         }
     }
 
+    public void customCamera(View view) {
+        requestPermission();
+    }
+
+    private void recordVideo() {
+        CustomCameraActivity.startUI(this);
+    }
+
+    private void requestPermission() {
+        boolean hasCameraPermission = ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED;
+        boolean hasAudioPermission = ContextCompat.checkSelfPermission(this, Manifest.permission.RECORD_AUDIO) == PackageManager.PERMISSION_GRANTED;
+        if (hasCameraPermission && hasAudioPermission) {
+            recordVideo();
+        } else {
+            List<String> permission = new ArrayList<String>();
+            if (!hasCameraPermission) {
+                permission.add(Manifest.permission.CAMERA);
+            }
+            if (!hasAudioPermission) {
+                permission.add(Manifest.permission.RECORD_AUDIO);
+            }
+            ActivityCompat.requestPermissions(this, permission.toArray(new String[permission.size()]), PERMISSION_REQUEST_CODE);
+        }
+
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        boolean hasPermission = true;
+        for (int grantResult : grantResults) {
+            if (grantResult != PackageManager.PERMISSION_GRANTED) {
+                hasPermission = false;
+                break;
+            }
+        }
+        if (hasPermission) {
+            recordVideo();
+        } else {
+            Toast.makeText(this, "权限获取失败", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public static Context getContext() { return mContext; }
 }

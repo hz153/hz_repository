@@ -4,15 +4,37 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!--    <TextView-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:text="test line"-->
-    <!--        android:textSize="80dp"-->
-    <!--        android:layout_gravity="center"/>-->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/history_rv"
+        android:layout_weight="5"
+        android:layout_toStartOf="@+id/tabBottom"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/tabBottom"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fdfdfd">
+
+        <Button
+            android:id="@+id/buttonClear"
+            style="?android:attr/borderlessButtonStyle"
+            android:text="清空历史记录"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <Button
+            style="?android:attr/borderlessButtonStyle"
+            android:id="@+id/buttonReturn"
+            android:text="返回"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </LinearLayout>
 
 </LinearLayout>

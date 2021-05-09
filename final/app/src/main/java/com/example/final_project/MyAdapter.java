@@ -12,7 +12,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.example.final_project.model.Video;
+import com.example.final_project.video.VideoPlayer;
+import com.example.final_project.db.HistoryUtil;
+import com.example.final_project.video.Video;
 
 import java.util.List;
 
@@ -55,10 +57,10 @@ public class MyAdapter extends RecyclerView.Adapter <MyAdapter.MyViewHolder> {
                 .into(holder.grid_img);
         holder.grid_title.setText(VideoList.get(position).getExtraValue());
         holder.grid_user.setText(VideoList.get(position).getUserName());
-        //todo:点击item跳转 并在其他页面补充相同事件
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                HistoryUtil.getInstance(ScrollingActivity.getContext()).addHistory(VideoList,position);
                 Intent intent = new Intent(mContext, VideoPlayer.class);
                 intent.putExtra("Video", VideoList.get(position));
                 mContext.startActivity(intent);

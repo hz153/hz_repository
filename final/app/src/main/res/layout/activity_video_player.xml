@@ -5,12 +5,20 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.example.final_project.customVideo
+    <com.example.final_project.video.customVideo
         android:id="@+id/videoView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         />
 
+    <ImageView
+        android:id="@+id/fav"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/fav"
+        android:layout_marginEnd="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_gravity="right"/>
 
     <ImageView
         android:id="@+id/buttonPlayOrPause"
@@ -28,97 +36,101 @@
         android:visibility="invisible"
        />
 
-    <LinearLayout
-        android:layout_marginTop="550dp"
-        android:layout_width="100dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_gravity="center"
-            android:id="@+id/userId"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="用户id"
-            android:textColor="#ffffff"
-            android:textSize="20sp"/>
-
-        <TextView
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:id="@+id/username"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="用户名"
-            android:textColor="#ffffff"
-            android:textSize="20sp"/>
-
-        <TextView
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:id="@+id/extraValue"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="额外信息"
-            android:textColor="#ffffff"
-            android:textSize="20sp"/>
-
-    </LinearLayout>
-
-    <com.example.final_project.model.Love
-        android:id="@+id/love_layout"
-        android:layout_marginTop="550dp"
-        android:layout_marginStart="300dp"
-        android:layout_width="100dp"
-        android:layout_height="200dp">
-
-        <ImageView
-            android:id="@+id/love"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerInParent="true"
-            android:src="@mipmap/heart_icon1"
-             />
-
-    </com.example.final_project.model.Love>
 
     <LinearLayout
-        android:id="@+id/L1"
+        android:id="@+id/line1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:paddingBottom="20dp"
-        android:orientation="horizontal">
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/tv_start"
-            android:layout_width="40dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_gravity="bottom"
-            />
+            android:orientation="horizontal">
 
-        <SeekBar
-            android:id="@+id/seekbar"
-            android:layout_width="250dp"
+            <LinearLayout
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/userId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="10dp"
+                    android:text="用户id"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="30dp"
+                    android:text="用户名"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/extraValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="30dp"
+                    android:text="额外信息"
+                    android:textColor="#ffffff"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            <com.example.final_project.video.Love
+                android:id="@+id/love_layout"
+                android:layout_marginStart="200dp"
+                android:layout_width="100dp"
+                android:layout_height="200dp">
+
+                <ImageView
+                    android:id="@+id/love"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/heart_icon1"
+                    />
+
+            </com.example.final_project.video.Love>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            />
+            android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/tv_end"
-            android:layout_width="40dp"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="10dp"
-            android:layout_gravity="bottom"/>
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_gravity="bottom"
+                />
 
+            <SeekBar
+                android:id="@+id/seekbar"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                />
 
+            <TextView
+                android:id="@+id/tv_end"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="bottom"/>
+        </LinearLayout>
 
     </LinearLayout>
-
-
-
 
 </FrameLayout>

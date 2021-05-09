@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MineActivity">
+
+    <ImageView
+        android:id="@+id/UserImage"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/round"
+        android:scaleX="1"
+        android:scaleY="1"
+        android:src="@drawable/timg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/round_mask"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/round"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/user_name_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Username"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/round_mask"
+        app:layout_constraintStart_toEndOf="@+id/round_mask"
+        app:layout_constraintTop_toTopOf="@id/round_mask" />
+
+    <LinearLayout
+        android:id="@+id/myID"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/round_mask"
+        tools:layout_editor_absoluteX="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:text="用户ID："
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/myID_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="2sp"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:text="test"
+            android:textColor="#7C7676"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/myPhone"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/myID"
+        tools:layout_editor_absoluteX="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:text="我的手机号码："
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/myPhone_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="2sp"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:text="13333333333"
+            android:textColor="#7C7676"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/myBirthday"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/myPhone"
+        tools:layout_editor_absoluteX="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:text="我的生日："
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/myBirthday_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="2sp"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:text="2020.12.13"
+            android:textColor="#7C7676"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/mySchool"
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/myBirthday"
+        tools:layout_editor_absoluteX="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10sp"
+            android:text="我的学校："
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/mySchool_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30sp"
+            android:layout_marginEnd="2sp"
+            android:maxLines="1"
+            android:gravity="center_vertical"
+            android:text="上海交通大学"
+            android:textColor="#7C7676"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/LogOffBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24sp"
+        android:backgroundTint="#EF5350"
+        android:elevation="2sp"
+        android:fontFamily="sans-serif-medium"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.92"
+        tools:layout_editor_absoluteX="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

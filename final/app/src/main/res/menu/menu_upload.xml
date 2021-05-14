@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/private_"
+        android:title="私密：仅自己可见"/>
+    <item
+        android:id="@+id/protected_"
+        android:title="朋友：互相关注可见"/>
+    <item
+        android:id="@+id/public_"
+        android:title="公开：所有人可见"/>
+</menu>

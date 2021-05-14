@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    tools:context=".upload.UploadActivity">
+
+    <Button
+        android:id="@+id/prev_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="返回预览"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintVertical_bias="0.95"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/next_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确认上传"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintVertical_bias="0.95"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout2"
+        app:layout_constraintStart_toStartOf="@id/linearLayout2"
+        tools:ignore="MissingConstraints"
+        tools:layout_constraintTop_toBottomOf="@id/Title"
+        tools:layout_editor_absoluteX="16dp">
+
+        <TextView
+            android:id="@+id/privacy"
+            android:layout_width="255dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="公开：所有人可见"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_edit" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="161dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="63dp">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/Title"
+            android:layout_width="188dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:hint="写标题并使用合适的标题，能让更多人看到~(点击封面图可更换)"
+            android:maxLines="1"
+            android:shadowColor="#36000000"
+            android:textColor="#000"
+            android:textColorHighlight="#7A000000"
+            android:textColorLink="#8B000000"
+            android:textSize="15sp"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
